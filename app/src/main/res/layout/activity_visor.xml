@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_img_background"
+    tools:context=".Visor"
+    tools:visibility="visible"
+
+    tools:ignore="ContentDescription" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#464A4848"
+        tools:visibility="visible" />
+    <ImageView
+        android:id="@+id/logocarga"
+        android:layout_width="126dp"
+        android:layout_height="121dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_img_logb" />
+    <ScrollView
+        android:id="@+id/scrol"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:visibility="visible"
+        tools:ignore="HardcodedText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="36dp"
+                android:text="DATOS DEL PROPIETARIO"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:autoSizeTextType="uniform" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".3"
+                    android:background="@drawable/roundb2"
+                    android:text="  Veterinario  "
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:id="@+id/Ovet"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".7"
+                    android:gravity="center_vertical"
+                    android:text="Veterinario Veterinario"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="26dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight=".3"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/roundb2"
+                    android:text="  Nombre  "
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:id="@+id/Onom"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".7"
+                    android:gravity="center_vertical"
+                    android:text="Nombre Nombre"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="38dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight=".3"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/roundb2"
+                    android:text="  DNI  "
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:id="@+id/Odni"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".7"
+                    android:gravity="center_vertical"
+                    android:text="45519390"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="26dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight=".3"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/roundb2"
+                    android:text="  CUIL  "
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:id="@+id/Ocuil"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".7"
+                    android:gravity="center_vertical"
+                    android:text="204555193908"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="26dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight=".3"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/roundb2"
+                    android:text="  Teléfono  "
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:id="@+id/Otel"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".7"
+                    android:gravity="center_vertical"
+                    android:text="2364451754"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="38dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight=".3"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/roundb2"
+                    android:text="  Localidad  "
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:id="@+id/OLoc"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".7"
+                    android:gravity="center_vertical"
+                    android:text="Junín"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="26dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight=".3"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/roundb2"
+                    android:text="  Calle  "
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:id="@+id/Ocal"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".7"
+                    android:gravity="center_vertical"
+                    android:text="Benito de Miguel"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="26dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight=".3"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/roundb2"
+                    android:text="  Número  "
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:id="@+id/Onro"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".7"
+                    android:gravity="center_vertical"
+                    android:text="10000"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="26dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight=".3"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/roundb2"
+                    android:text="  Piso  "
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:id="@+id/Opso"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".7"
+                    android:gravity="center_vertical"
+                    android:text="PB"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="80dp"
+                android:text="DATOS DEL ANIMAL"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:autoSizeTextType="uniform" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="38dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".3"
+                    android:background="@drawable/roundb2"
+                    android:text="  Nombre  "
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:id="@+id/OAnom"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".7"
+                    android:gravity="center_vertical"
+                    android:text="Nombre Nombre"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="26dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".3"
+                    android:background="@drawable/roundb2"
+                    android:text="  Sexo  "
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:id="@+id/OAsec"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".7"
+                    android:gravity="center_vertical"
+                    android:text="Macho"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".3"
+                    android:background="@drawable/roundb2"
+                    android:text="  Raza  "
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:id="@+id/OAraz"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".7"
+                    android:gravity="center_vertical"
+                    android:text="Raza Raza Raza"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".3"
+                    android:background="@drawable/roundb2"
+                    android:text="  Pelaje  "
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:id="@+id/OApel"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".7"
+                    android:gravity="center_vertical"
+                    android:text="Pelaje"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".3"
+                    android:background="@drawable/roundb2"
+                    android:text="  Talla  "
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:id="@+id/OAtall"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".7"
+                    android:gravity="center_vertical"
+                    android:text="TallaTalla"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".3"
+                    android:background="@drawable/roundb2"
+                    android:text="  Especie  "
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:id="@+id/OAesp"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".7"
+                    android:gravity="center_vertical"
+                    android:text="Especie"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".3"
+                    android:background="@drawable/roundb2"
+                    android:text="  Edad  "
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:id="@+id/OAedd"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".7"
+                    android:gravity="center_vertical"
+                    android:text="00"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".3"
+                    android:background="@drawable/roundb2"
+                    android:text="  Nacimiento "
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:id="@+id/OAnac"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".7"
+                    android:gravity="center_vertical"
+                    android:text="00/00/0000"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".3"
+                    android:background="@drawable/roundb2"
+                    android:text="  Rabia  "
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:id="@+id/OAvrab"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".7"
+                    android:gravity="center_vertical"
+                    android:text="00/00/0000"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".3"
+                    android:background="@drawable/roundb2"
+                    android:text="  Desp  "
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:id="@+id/OAdes"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".7"
+                    android:gravity="center_vertical"
+                    android:text="00/00/0000"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".3"
+                    android:background="@drawable/roundb2"
+                    android:text="  Castrado  "
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:id="@+id/OAcas"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".7"
+                    android:gravity="center_vertical"
+                    android:text="SI"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imgurl"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginTop="32dp"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteY="731dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="60dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".3"
+                    android:background="@drawable/roundb2"
+                    android:text="  Código  "
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:id="@+id/Ocod"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".7"
+                    android:gravity="center_vertical"
+                    android:text="1000000"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
