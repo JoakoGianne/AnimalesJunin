@@ -26,6 +26,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/ic_img_logb" />
+
     <ScrollView
         android:id="@+id/scrol"
         android:layout_width="match_parent"
@@ -146,38 +147,9 @@
                     android:textStyle="bold"
                     app:autoSizeTextType="uniform" />
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="26dp"
-                android:gravity="center_vertical">
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="30dp"
-                    android:layout_weight=".3"
-                    android:layout_marginStart="16dp"
-                    android:background="@drawable/roundb2"
-                    android:text="  CUIL  "
-                    android:textAlignment="center"
-                    android:textColor="#FFFFFF"
-                    android:textSize="20sp"
-                    app:autoSizeTextType="uniform" />
 
-                <TextView
-                    android:id="@+id/Ocuil"
-                    android:layout_width="0dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_weight=".7"
-                    android:gravity="center_vertical"
-                    android:text="204555193908"
-                    android:textColor="#000000"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    app:autoSizeTextType="uniform" />
-            </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -479,6 +451,38 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".3"
+                    android:background="@drawable/roundb2"
+                    android:text="  Peso  "
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:id="@+id/Opeso"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight=".7"
+                    android:gravity="center_vertical"
+                    android:text="10 kg"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginTop="16dp">
 
@@ -736,5 +740,45 @@
         </LinearLayout>
 
     </ScrollView>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".93" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".98" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".01" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/b4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".07" />
+
+    <ImageButton
+        android:id="@+id/cros"
+        android:visibility="invisible"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#00FFFFFF"
+        android:onClick="cross"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@id/b4"
+        app:layout_constraintLeft_toRightOf="@id/b1"
+        app:layout_constraintRight_toLeftOf="@id/b2"
+        app:layout_constraintTop_toBottomOf="@id/b3"
+        app:srcCompat="@mipmap/ic_btn_cross" />
 </androidx.constraintlayout.widget.ConstraintLayout>

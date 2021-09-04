@@ -7,7 +7,7 @@
     android:layout_gravity="center_horizontal"
     android:background="@mipmap/ic_img_background"
     tools:context=".MainActivity"
-    tools:ignore="ContentDescription, UselessLeaf">
+    tools:ignore="ContentDescription, UselessLeaf, UsingOnClickInXml">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -75,8 +75,6 @@
         app:tint="#000000" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
-        style="@style/Widget.AppCompat.ImageButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="#00FFFFFF"
@@ -87,7 +85,6 @@
         app:layout_constraintRight_toLeftOf="@id/help2"
         app:layout_constraintTop_toBottomOf="@id/help0"
         app:srcCompat="@mipmap/ic_help"
-        app:tint="#000000"
         tools:ignore="MissingConstraints" />
 
     <LinearLayout

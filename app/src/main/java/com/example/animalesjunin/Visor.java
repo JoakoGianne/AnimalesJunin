@@ -7,6 +7,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -269,6 +270,8 @@ public class Visor extends AppCompatActivity {
 
     public void fin()
     {
+        ImageButton z = (ImageButton) findViewById(R.id.cros);
+        z.setVisibility(View.VISIBLE);
         Log.d("fin", "inicio");
         TextView a = (TextView) findViewById(R.id.Ocod);
         a.setText(values[0]);
@@ -280,20 +283,20 @@ public class Visor extends AppCompatActivity {
         d.setText(values[3]);
         TextView e = (TextView) findViewById(R.id.Otel);
         e.setText(values[4]);
-        TextView f = (TextView) findViewById(R.id.Ocuil);
-        f.setText(values[5]);
+        TextView f = (TextView) findViewById(R.id.Opeso);
+        f.setText(values[11]);
         TextView g = (TextView) findViewById(R.id.OLoc);
-        g.setText(values[6]);
+        g.setText(values[5]);
         TextView h = (TextView) findViewById(R.id.Ocal);
-        h.setText(values[7]);
+        h.setText(values[6]);
         TextView i = (TextView) findViewById(R.id.Onro);
-        i.setText(values[8]);
+        i.setText(values[7]);
         TextView j = (TextView) findViewById(R.id.Opso);
-        j.setText(values[9]);
+        j.setText(values[8]);
         TextView k = (TextView) findViewById(R.id.OAsec);
         k.setText(values[10]);
         TextView l = (TextView) findViewById(R.id.OAnom);
-        l.setText(values[11]);
+        l.setText(values[9]);
         TextView m = (TextView) findViewById(R.id.OAesp);
         m.setText(values[12]);
         TextView n = (TextView) findViewById(R.id.OApel);
@@ -344,5 +347,8 @@ public class Visor extends AppCompatActivity {
         img.setVisibility(View.GONE);
         ScrollView scrl = (ScrollView) findViewById(R.id.scrol);
         scrl.setVisibility(View.VISIBLE);
+    }
+    public void cross(View view){
+        finish();
     }
 }

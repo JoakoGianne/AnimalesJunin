@@ -5,23 +5,100 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/ic_img_background"
-    tools:context=".Ayuda">
+    tools:context=".Ayuda"
+    tools:ignore="ContentDescription,MissingConstraints,UsingOnClickInXml" >
 
     <ScrollView
         android:id="@+id/scrol1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#54FFFFFF"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="0dp"
         android:visibility="visible"
-        tools:ignore="HardcodedText">
+        tools:ignore="HardcodedText"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_horizontal">
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="36dp"
+                android:text="Búsqueda por QR"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:autoSizeTextType="uniform" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:text="Para proceder la búsqueda a través del código QR:"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:text="Presione el ícono QR."
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@mipmap/ic_codigo_qr" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="18dp"
+                android:text="Permita el uso de la cámara."
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@mipmap/ic_permiso" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="18dp"
+                android:text="Use el Scaner para escanear el QR en el collar."
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                tools:ignore="RtlHardcoded">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="410dp"
+                    app:srcCompat="@mipmap/ic_collar" />
+            </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
@@ -33,47 +110,64 @@
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:autoSizeTextType="uniform" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
-                android:layout_marginTop="10dp"
                 android:text="En caso de no poder leer el Código QR, tiene la opción de buscar manualmente. Para ello, debe presionar el ícono de lupa ubicado a mitad de la pantalla."
-                android:textSize="16sp"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="16sp" />
 
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="30dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="16dp"
                 app:srcCompat="@mipmap/ic_btn_search" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
-                android:layout_marginTop="10dp"
-                android:text="Se abrirá un campo donde puede ingresar el código ubicado en el collar al lado del QR."
-                android:textSize="16sp"
-                android:textColor="#000000" />
+                android:text="Se abrirá un campo donde puede ingresar el código numerico ubicado en el collar."
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="16sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:layout_marginTop="10dp"
-                android:gravity="center" >
+                android:layout_marginTop="16dp"
+                android:gravity="center">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
-                    android:text="Código"
-                    android:textColor="#000000"
-                    android:textIsSelectable="false"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Código"
+                        android:textColor="#000000"
+                        android:textIsSelectable="false"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/black" />
+
+                </LinearLayout>
+
 
                 <ImageView
                     android:layout_width="50dp"
@@ -93,14 +187,56 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
-                android:layout_marginTop="10dp"
-                android:text="En campo izquierdo"
-                android:textSize="16sp"
-                android:textColor="#000000" />
+                android:text="En el campo izquierdo es donde debe colocar el código.\nCon el boton de lupa central podrá seguir a la búsqueda.\nCon la cruz podrá cerrar la búsqueda."
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+
 
         </LinearLayout>
 
     </ScrollView>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".93" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".98" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".01" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/b4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".07" />
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#00FFFFFF"
+        android:onClick="cross"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@id/b4"
+        app:layout_constraintLeft_toRightOf="@id/b1"
+        app:layout_constraintRight_toLeftOf="@id/b2"
+        app:layout_constraintTop_toBottomOf="@id/b3"
+        app:srcCompat="@mipmap/ic_btn_cross" />
 </androidx.constraintlayout.widget.ConstraintLayout>
